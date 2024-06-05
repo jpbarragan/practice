@@ -95,3 +95,21 @@
 
 // callMe();
 
+// Practice Math object
+
+let arr = [1, 3, 56, 778, 29];
+console.log(Math.max(... arr));
+console.log(Math.min(... arr));
+
+let pi = 3.1416;
+console.log(pi);
+console.log(Math.round(pi));
+console.log(Math.ceil(pi));
+console.log(Math.floor(pi));
+
+console.log(Math.random());
+console.log(Math.floor(Math.random() * 10));
+
+let planets = ["Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno"];
+let randomPlanet = planets[Math.floor(Math.random() * planets.length)];
+console.log(randomPlanet);
