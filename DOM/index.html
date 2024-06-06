@@ -4,11 +4,25 @@
   <title>Document</title>
   <link href="style.css" type="text/css" rel="stylesheet" />
   <script src="script.js"></script>
+  <script>
+    function handleClick(){
+        alert("I clicked the button");
+    }
+    function mouseOver(){
+        console.log("I pointed to it with the mouse");
+    }
+  </script>
+
 </head>
 <body>
-  <h1 id="title">Welcome to my Site!</h1>
+  <h1 id="title" onmouseover="mouseOver()">Welcome to my Site!</h1>
   <p id="intro" style="font-size: 14px">
     Testing 1 2 3...
   </p>
+  <!--<button onclick="handleClick()">Sample button</button>-->
+  <form>
+    <input type="text"/>
+    <button type= "submit" id="button">Sample button</button>
+  </form>
 </body>
 </html>

@@ -113,3 +113,30 @@ console.log(Math.floor(Math.random() * 10));
 let planets = ["Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno"];
 let randomPlanet = planets[Math.floor(Math.random() * planets.length)];
 console.log(randomPlanet);
+
+
+let week = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
+let day = week[Math.floor(Math.random() * week.length)];
+console.log(day);
+
+for (dia of week) {
+    console.log(dia);
+}
+
+let cadena = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let suma = 0;
+for (i = 0; i < cadena.length; i++) {
+    suma += i;
+}
+console.log(suma);
+
+y = 0;
+while (y < 100) {
+    console.log(y);
+    y++;
+    if (y == 15){
+        break
+    }
+}
+
+

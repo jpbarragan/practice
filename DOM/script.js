@@ -35,4 +35,18 @@ window.addEventListener('load', function() {
 
     logProperties(title);
 
+    // TODO: add event listener for button clicking
+    const button = document.getElementById("button");
+    
+    button.addEventListener("click", () => {
+        console.log("I clicked the button");
+    })
+
+    // TODO: add event listener for hoovering mouse over title
+    const buttonHovering = document.getElementById("button");
+
+    buttonHovering.addEventListener("mouseover", () => {
+        console.log("I hoovered over the button");
+    })
+
   });
