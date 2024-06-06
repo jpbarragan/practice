@@ -80,16 +80,26 @@ public class Main {
 
         //Practice input and conditionals
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter your name:");
-        String name = input.nextLine();
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Please enter your name:");
+//        String name = input.nextLine();
+//
+//        if (name.equals("Pepe")){
+//            System.out.println("Hello Pepe, nice to have you back");
+//        } else {
+//            System.out.println("Nice to meet you, " + name + "!");
+//        }
 
-        if (name.equals("Pepe")){
-            System.out.println("Hello Pepe, nice to have you back");
-        } else {
-            System.out.println("Nice to meet you, " + name + "!");
-        }
+        // Create Library arraylist
 
+        Book book1 = new Book("Don Quijote", "Cervantes", 600);
+
+        System.out.println(book1.getTitle() + " is a book by " + book1.getAuthor() + " and has " + book1.getPages() + " pages.");
+        System.out.println(book1.toString());
+
+        Booklet booklet = new Booklet("Manual de reparaciones", "Cualquiera", 20, "MIT");
+        System.out.println(booklet.getTitle());
+        System.out.println(booklet.toString());
 
     }
 }
